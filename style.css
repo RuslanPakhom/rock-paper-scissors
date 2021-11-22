@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.battleground{
+    height:90%;
+    width:90%;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.score{
+    display:flex;
+    justify-content: space-between;
+    height:30%;
+    border:2px solid black
+    
+}
+
+.label{
+    font-weight: 900;
+    font-size:32px;
+}
+
+.player, .computer{
+    text-align: center;
+    width:50%;
+}
+
+#player-score, #computer-score{
+    font-weight: 900;
+    font-size:96px;
+}
+
+.round{
+    height:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round.round-active{
+    display:flex;
+    justify-content: space-between;
+}
+
+.status-text{
+    font-size:48px;
+    text-align: center;
+}
+
+.round img{
+    width:227px;
+    height:227px;
+}
+
+.buttons{
+    display:flex;  
+    height:20%;
+}
+.buttons button{
+    display:inline-block;
+    width:33.33%;
+    flex-grow:1;
+}
+    
+
+#start{
+    display:block;
+    height:20%;
+    padding: 20px;
+    background: rgb(72, 187, 57);
+    margin:10px auto;
+}
+
+#rock{
+    background: url('/assets/rock.png') no-repeat center;
+    background-size: 150px;
+}
+
+#paper{
+    background: url('/assets/paper.png') no-repeat center;
+    background-size: 120px;
+}
+
+#scissors{
+    background: url('/assets/scissors.png') no-repeat center;
+    background-size: 150px;
+}
+
